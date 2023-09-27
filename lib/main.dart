@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:spotify_clone_app/presentation/pages/home_page.dart';
+import 'package:spotify_clone_app/presentation/pages/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,9 +25,14 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
-          home: const HomePage(),
+          home: const ProfilePage(),
         );
       },
     );
   }
 }
+//  style: TextStyle(
+//                       color: Color(ColorCustom.whitecolor),
+//                       fontSize: 18,
+//                       fontWeight: FontWeight.w600),
+//                 ),
